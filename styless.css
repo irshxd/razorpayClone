@@ -1,53 +1,53 @@
-.card::after{
-    content: "";
-    background-image: url("./images/features-wave.svg");
-    position: absolute;
-    height: 3.5rem;
-    width: 5rem;
-    z-index:12;
-    background-size: cover;
-    right:0;
-    bottom:1rem;
-    opacity: 0;
-    transition:all;
-    transition-duration: 200ms; 
+.card::after {
+  content: "";
+  background-image: url("./images/features-wave.svg");
+  position: absolute;
+  height: 3.5rem;
+  width: 5rem;
+  z-index: 12;
+  background-size: cover;
+  right: 0;
+  bottom: 1rem;
+  opacity: 0;
+  transition: all;
+  transition-duration: 200ms;
 }
 
-.card:hover .box{
-    filter: drop-shadow(0 0 1.2rem rgb(243, 238, 238));
+.card:hover .box {
+  filter: drop-shadow(0 0 1.2rem rgb(243, 238, 238));
 }
 
-.card:hover::after{
-    opacity: 1;
+.card:hover::after {
+  opacity: 1;
 }
 
-.card2::after{
-    content: "";
-    background-image: url("./images/features2-wave.svg");
-    position: absolute;
-    height: 4rem;
-    width: 7rem;
-    z-index:12;
-    background-size: cover;
-    right: 0;
-    bottom:2rem;
-    opacity: 0;
-    transition:all;
-    transition-duration: 200ms; 
+.card2::after {
+  content: "";
+  background-image: url("./images/features2-wave.svg");
+  position: absolute;
+  height: 4rem;
+  width: 7rem;
+  z-index: 12;
+  background-size: cover;
+  right: 0;
+  bottom: 2rem;
+  opacity: 0;
+  transition: all;
+  transition-duration: 200ms;
 }
 
-.card2:hover .box{
-    filter: drop-shadow(0 0 1.5rem #1f2532);
+.card2:hover .box {
+  filter: drop-shadow(0 0 1.5rem #1f2532);
 }
 
-.card2:hover::after{
-    opacity: 1;
+.card2:hover::after {
+  opacity: 1;
 }
 
-.card3{
-    box-shadow: 5px 5px 10px #ededf0;
-    background-position-y: -2px;
-    background-position-x: -2px;
+.card3 {
+  box-shadow: 5px 5px 10px #ededf0;
+  background-position-y: -2px;
+  background-position-x: -2px;
 }
 
 /* .corefeaturebg{
@@ -56,30 +56,27 @@
     padding-bottom: 12rem;
 } */
 
-.joinsecanimation{
-    animation: scrollanimation 10s linear infinite;
+.joinsecanimation {
+  animation: scrollanimation 10s linear infinite;
 }
 
-@keyframes scrollanimation{
-    0%{
-        top: 0;
-    }
-    100%{
-        top: -50%;
-    }
+@keyframes scrollanimation {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -50%;
+  }
 }
 
+@media (min-width: 1024px) {
+  .ctasection {
+    background-size: 100% 100%;
+  }
 
-
-@media (min-width:1024px){
-    .ctasection{
-        background-size: 100% 100%; 
-    }
-
-    .corefeaturebg{
-        background-size: 100% 100%;
-        padding-top: 12rem;
-        padding-bottom: 12rem;
-    }
-        
+  .corefeaturebg {
+    background-size: 100% 100%;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
 }
